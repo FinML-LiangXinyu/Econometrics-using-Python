@@ -25,4 +25,4 @@ $\frac{\partial e^Te}{\partial b}=-2y^TX+2X^TXb=0$
 
 计算二阶海塞矩阵： $H_{e^Te}\left(b\right)=\frac{\partial2X^TXb}{\partial b}=2X^TX$ 
 
- $\forall a\neq0$ ， $a^TX^TXa={(Xa)}^TXa>0$ ，故有 $H_{e^Te}\left(b\right)$ 矩阵正定，可得 ${argmin}\below b{e^Te}=b^*$ 。
+ $\forall a\neq0$ ， $a^TX^TXa={(Xa)}^TXa>0$ ，故有 $H_{e^Te}\left(b\right)$ 矩阵正定，可得 $\argmin\limits_b{e^Te}=b^*$ 。

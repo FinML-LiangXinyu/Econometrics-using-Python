@@ -5,7 +5,7 @@
 
 用 $b$ 估计 $\beta$ ，可得： $y=Xb+e$ 。
 
-最优化问题为： ${min}\limits_b{e^Te}$ 
+最优化问题为： $\min\limits_b{e^Te}$ 
 
 $e^Te=\left(y-Xb\right)^T\left(y-Xb\right)=y^Ty-y^TXb-\left(Xb\right)^Ty+\left(Xb\right)^TXb=y^Ty-2y^TXb+b^TX^TXb$
  
@@ -19,8 +19,10 @@ $\frac{\partial b^TX^TXb}{\partial b}=\left[\frac{\partial b^TX^TXb}{\partial b_
 
 $\frac{\partial e^Te}{\partial b}=-2y^TX+2X^TXb=0$
 
-$X^TXb=y^TX$
+正规方程组： $X^TXb=y^TX$ 
 
-$b^*=\left(X^TX\right)^{-1}y^TX$
+解得： $b^*=\left(X^TX\right)^{-1}y^TX$ 
 
-$b^*=\left(X^TX\right)^{-1}y^TX$
+计算二阶海塞矩阵： $H_{e^Te}\left(b\right)=\frac{\partial2X^TXb}{\partial b}=2X^TX$ 
+
+ $\forall a\neq0$ ， $a^TX^TXa={(Xa)}^TXa>0$ ，故有 $H_{e^Te}\left(b\right)$ 矩阵正定，可得 ${argmin}\below b{e^Te}=b^*$ 。

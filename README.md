@@ -1,7 +1,7 @@
 # Econometrics-using-Python
 ## 最小二乘估计 $\left(OLS\right)$
 
-对于样本集 $\left(x_i,y_i\right)_{i=1,2,...,n}$ ，线性回归模型为： $y=X\beta+\varepsilon$ 。其中， $𝛽=\left[𝛽_1,𝛽_2,...,𝛽_𝐾\right]^𝑇$ ， $𝑋=\left[𝑥_1,𝑥_2,…,𝑥_𝑛\right]^𝑇$ ， $𝑦=\left[𝑦_1,𝑦_2,…,𝑦_𝑛\right]^𝑇$ 。
+对于样本集 $\\{\left(x_i,y_i\right)_{i=1,2,...,n}\\}$ ，线性回归模型为： $y=X\beta+\varepsilon$ 。其中， $𝛽=\left[𝛽_1,𝛽_2,...,𝛽_𝐾\right]^𝑇$ ， $𝑋=\left[𝑥_1,𝑥_2,…,𝑥_𝑛\right]^𝑇$ ， $𝑦=\left[𝑦_1,𝑦_2,…,𝑦_𝑛\right]^𝑇$ 。
 
 用 $b$ 估计 $\beta$ ，可得： $y=Xb+e$ 。
 
@@ -25,4 +25,4 @@ $\frac{\partial e^Te}{\partial b}=-2y^TX+2X^TXb=0$
 
 计算二阶海塞矩阵： $H_{e^Te}\left(b\right)=\frac{\partial2X^TXb}{\partial b}=2X^TX$ 
 
- $\forall a\neq0$ ， $a^TX^TXa={(Xa)}^TXa>0$ ，故有 $H_{e^Te}\left(b\right)$ 矩阵正定，可得 $\argmin\limits_b{e^Te}=b^*$ 。
+ $\forall a\neq0$ ， $a^TX^TXa={(Xa)}^TXa>0$ ，故有 $H_{e^Te}\left(b\right)$ 矩阵正定，可得 $\arg\min\limits_b{e^Te}=b^*$ 。
